@@ -1,0 +1,14 @@
+.jumbotron {
+  text-align: center;
+  background: url("pingpong.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+ul {
+  margin-top: 25px;
+}
+
+#userInput {
+  width: 30%;
+}
