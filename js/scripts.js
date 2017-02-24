@@ -10,7 +10,9 @@ $(document).ready(function () {
           alert("PingPong");
        } else if ((number % 5) === 0) {
           alert("Pong");
-       }  else {
+       } else if ((number % 3) === 0) {
+          alert("ping");
+       } else {
           alert(number);
        }
      }
