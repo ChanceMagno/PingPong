@@ -4,7 +4,6 @@ $(document).ready(function () {
 
     var userInput = $("#userInput").val();
 
-
      for (number = 1; number <= userInput; number++) {
        if ((number % 15) === 0) {
           $("#pingPongOutput").append("<li>"+"PingPong"+"</li>");
@@ -13,7 +12,7 @@ $(document).ready(function () {
        } else if ((number % 3) === 0) {
           $("#pingPongOutput").append("<li>"+"Ping"+"</li>");
        } else {
-          alert(number);
+          $("#pingPongOutput").append("<li>"+number+"</li>");
        }
      }
   });
