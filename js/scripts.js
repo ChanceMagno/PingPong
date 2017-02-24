@@ -7,7 +7,7 @@ $(document).ready(function () {
 
      for (number = 1; number <= userInput; number++) {
        if ((number % 15) === 0) {
-          alert("PingPong");
+          $("#pingPongOutput").append("<li>"+"pingPong"+"</li>");
        } else if ((number % 5) === 0) {
           alert("Pong");
        } else if ((number % 3) === 0) {
