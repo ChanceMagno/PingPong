@@ -12,3 +12,21 @@ ul {
 #userInput {
   width: 30%;
 }
+
+.col-md-8 {
+  border-style: solid;
+  border-width: inherit;
+}
+
+ul {
+  height: 300px;
+  -webkit-columns: 3;
+     -moz-columns: 3;
+          columns: 3;
+  -moz-column-fill: balance;
+       column-fill: balance;
+}
+
+.col-md-4 {
+  border-style: solid;
+}
