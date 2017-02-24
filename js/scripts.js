@@ -7,11 +7,11 @@ $(document).ready(function () {
 
      for (number = 1; number <= userInput; number++) {
        if ((number % 15) === 0) {
-          $("#pingPongOutput").append("<li>"+"pingPong"+"</li>");
+          $("#pingPongOutput").append("<li>"+"PingPong"+"</li>");
        } else if ((number % 5) === 0) {
-          alert("Pong");
+          $("#pingPongOutput").append("<li>"+"Pong"+"</li>");;
        } else if ((number % 3) === 0) {
-          alert("ping");
+          $("#pingPongOutput").append("<li>"+"Ping"+"</li>");
        } else {
           alert(number);
        }
