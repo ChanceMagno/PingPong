@@ -1,12 +1,13 @@
 .jumbotron {
   text-align: center;
-  background: url("pingpong.gif");
+  background: url("img/pingpong.gif");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 ul {
   margin-top: 25px;
+  align-items: center;
 }
 
 #userInput {
@@ -16,17 +17,28 @@ ul {
 .col-md-8 {
   border-style: solid;
   border-width: inherit;
+  height: 500px;
+  margin-left: 200px;
 }
 
-ul {
-  height: 300px;
-  -webkit-columns: 3;
-     -moz-columns: 3;
-          columns: 3;
-  -moz-column-fill: balance;
-       column-fill: balance;
-}
 
-.col-md-4 {
+
+.col-md-2 {
   border-style: solid;
+  background: url("img/pingpongcol.jpg");
+  height: 1000px;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: orange;
+}
+
+a {
+  color: red;
+}
+
+p {
+  font-size: 16px;
+  font-weight: bold;
 }
