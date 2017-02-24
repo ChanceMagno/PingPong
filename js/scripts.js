@@ -1,9 +1,16 @@
 $(document).ready(function () {
   $("#pingPong").submit(function(event){
     event.preventDefault();
-    var userInput = $(parseInt("#userInput")).val();
-    if ( userInput = 0) {
-      alert("not a number")
-    } else {alert("didnt work")}
+
+    var userInput = $("#userInput").val();
+
+
+     for (number = 1; number <= userInput; number++) {
+       if ((number % 15) === 0) {
+          alert("PingPong");
+       }  else {
+          alert(number);
+       }
+     }
   });
 });
