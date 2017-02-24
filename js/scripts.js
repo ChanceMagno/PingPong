@@ -1,6 +1,8 @@
 $(document).ready(function () {
   $("#pingPong").submit(function(event){
+    $("#pingPongOutput").empty();
     event.preventDefault();
+
 
     var userInput = $("#userInput").val();
 
