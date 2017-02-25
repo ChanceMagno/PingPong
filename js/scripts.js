@@ -13,6 +13,7 @@ $(document).ready(function () {
           $("#pingPongOutput").append("<li>"+"Ping"+"</li>");
        } else {
           $("#pingPongOutput").append("<li>"+number+"</li>");
+          $("#pingPong").trigger("reset");
        }
      }
   });
