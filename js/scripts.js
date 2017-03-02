@@ -1,17 +1,17 @@
-var counter = function(userInput){
-var number = [];
-  for(var countingNumber = 1; countingNumber<= userInput; countingNumber++){
-    console.log(number);
-    number.push(countingNumber);
-    if ((countingNumber % 15) === 0){
-      number.splice(countingNumber-1, 1, 'PingPong');
-    } if ((countingNumber % 5) === 0){
-      number.splice(countingNumber-1, 1, 'Pong');
-    } if ((countingNumber % 3) === 0){
-      number.splice(countingNumber-1, 1, 'Ping');
+var numbers = [];
+var countingNumber;
+var count = function(userInput){
+  for(var countingNumber = 1; countingNumber <= userInput; countingNumber++){
+    numbers.push(countingNumber)
+    if (countingNumber % 15 === 0){
+      numbers.splice(countingNumber-1, 1, 'PingPong');
+    } else if (countingNumber % 5 === 0) {
+      numbers.splice(countingNumber-1, 1, 'Pong');
+    } else if (countingNumber % 3 === 0){
+      numbers.splice(countingNumber-1, 1, 'Ping');
     }
   }
-
+  return numbers;
 }
 
 
@@ -20,8 +20,11 @@ $(document).ready(function () {
     $("#pingPongOutput").empty();
       event.preventDefault();
       var userInput = $("#userInput").val();
-      var counting = counter(userInput);
-      //  $("#pingPongOutput").append("<li>" + number.select(countingNumber-1) + "</li>");
+      var counting = count(userInput);
+      numbers.forEach(function(number){
+        $("#pingPongOutput").append("<li>"+ number +"</li>");
+      })
+
 
 
 
