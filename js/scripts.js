@@ -1,7 +1,7 @@
 var counter = function(userInput){
 var number = [];
   for(var countingNumber = 1; countingNumber<= userInput; countingNumber++){
-    debugger;
+    console.log(number);
     number.push(countingNumber);
     if ((countingNumber % 15) === 0){
       number.splice(countingNumber-1, 1, 'PingPong');
@@ -21,6 +21,9 @@ $(document).ready(function () {
       event.preventDefault();
       var userInput = $("#userInput").val();
       var counting = counter(userInput);
+      //  $("#pingPongOutput").append("<li>" + number.select(countingNumber-1) + "</li>");
+
+
 
 
 
