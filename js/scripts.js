@@ -1,14 +1,14 @@
 var counter = function(userInput){
 var number = [];
-  for(var countingNumber = 0; countingNumber<= userInput; countingNumber++){
+  for(var countingNumber = 1; countingNumber<= userInput; countingNumber++){
     debugger;
     number.push(countingNumber);
     if ((countingNumber % 15) === 0){
-      number.splice(countingNumber, 1, 'PingPong');
+      number.splice(countingNumber-1, 1, 'PingPong');
     } if ((countingNumber % 5) === 0){
-      number.splice(countingNumber, 1, 'Pong');
+      number.splice(countingNumber-1, 1, 'Pong');
     } if ((countingNumber % 3) === 0){
-      number.splice(countingNumber, 1, 'Ping');
+      number.splice(countingNumber-1, 1, 'Ping');
     }
   }
 
@@ -21,7 +21,7 @@ $(document).ready(function () {
       event.preventDefault();
       var userInput = $("#userInput").val();
       var counting = counter(userInput);
-      
+
 
 
 
