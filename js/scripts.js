@@ -1,10 +1,24 @@
+var counter = function(userInput){
+var numbers = [];
+  for(var countingNumber = 1; countingNumber< userInput; countingNumber++){
+    numbers.push(countingNumber);
+    console.log(countingNumber);
+    console.log(numbers);
+  }
+}
+
 $(document).ready(function () {
   $("#pingPong").submit(function(event){
-    $("#pingPongOutput").empty();
+    //$("#pingPongOutput").empty();
+      event.preventDefault();
     var userInput = $("#userInput").val();
-    event.preventDefault();
+   var counting = counter(userInput);
 
-     for (number = 1; number <= userInput; number++) {
+
+
+
+
+/*     for (number = 1; number <= userInput; number++) {
        if ((number % 15) === 0) {
           $("#pingPongOutput").append("<li>"+"Ping Pong"+"</li>");
        } else if ((number % 5) === 0) {
@@ -16,5 +30,6 @@ $(document).ready(function () {
           $("#pingPong").trigger("reset");
        }
      }
+     */
   });
 });
