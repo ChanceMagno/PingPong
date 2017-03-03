@@ -12,14 +12,10 @@ Ping Pong will take a user inputted numeric value and count it out number by num
 
 |Behavior|Input|Output|
 |:---:|:---:|:---:|
-|Reject user input if it is a non-numerical string|input type "number"|"will not allow letters to be inputted"|
-|able to count up to user inputted number|ex: 15|will output each number|
-|must check if number is divisible by 15 with none left over|15|dislpay "PingPong"|
-|must check if number is divisible by 5 with none left over|5|display "Pong"|
-|must check if number is divisible by 3 with none left over|3|display "Ping"|
-|If not divisible by 3, 5, or 15 with none leftover.|ex: 4|will output current number ex: 4|
-|Output numbers into a ul|ex: 24|will display each number, ping, pong or pingPong in its own li|
-|will empty previous result if user resubmits new number|any number|will clear old list and generate new based on new inputted value|
+|Output can count up to provided number|2|[1,2]|
+|Output can replace numbers divisible by 3 with no remainder with "ping".|3|[1,2,ping]|
+|Output can replace numbers divisible by 5 with no remainder with "ping".|3|[1,2,ping,4,pong]|
+|Output can replace numbers divisible by 15 with no remainder with "ping".|3|[1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,pingpong]|
 
 Setup/Installation Requirements
 

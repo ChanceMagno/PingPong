@@ -1,4 +1,5 @@
 var numbers = [];
+
 var countingNumber;
 var count = function(userInput){
   for(var countingNumber = 1; countingNumber <= userInput; countingNumber++){
@@ -14,38 +15,17 @@ var count = function(userInput){
   return numbers;
 }
 
-
 $(document).ready(function () {
   $("#pingPong").submit(function(event){
     $("#pingPongOutput").empty();
-      event.preventDefault();
-      var userInput = $("#userInput").val();
-      var counting = count(userInput);
-      numbers.forEach(function(number){
-        $("#pingPongOutput").append("<li>"+ number +"</li>");
-      })
+    numbers.splice(0,numbers.length);
+    event.preventDefault();
+    var userInput = $("#userInput").val();
+    var counting = count(userInput);
+    numbers.forEach(function(number){
+      $("#pingPongOutput").append("<li>"+ number +"</li>");
+    })
 
 
-
-
-
-
-
-
-
-
-/*     for (number = 1; number <= userInput; number++) {
-       if ((number % 15) === 0) {
-          $("#pingPongOutput").append("<li>"+"Ping Pong"+"</li>");
-       } else if ((number % 5) === 0) {
-          $("#pingPongOutput").append("<li>"+"Pong"+"</li>");
-       } else if ((number % 3) === 0) {
-          $("#pingPongOutput").append("<li>"+"Ping"+"</li>");
-       } else {
-          $("#pingPongOutput").append("<li>"+number+"</li>");
-          $("#pingPong").trigger("reset");
-       }
-     }
-     */
   });
 });
